@@ -1,11 +1,13 @@
-console.log('test')
+var React = require('react')
+var ReactDOM = require('react-dom')
+var HelloWorld = React.createClass({
+    render: function() {
+        return (
+            <div>
+                Hello World!
+            </div>
+        )
+    }
+});
 
-
-
-console.log('test')
-console.log('test')
-console.log('test')
-console.log('test')
-console.log('test')
-console.log('test')
-console.log('test')
+ReactDOM.render(<HelloWorld />, document.getElementById('app'));
